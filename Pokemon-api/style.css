@@ -15,6 +15,7 @@ section {
     padding: 20px;
     border: 5px solid #768195;
     font-family: "Michroma", sans-serif;
+    text-transform: capitalize;
 }
 
 .pkmnimg {
@@ -28,4 +29,24 @@ section {
     color: rgb(34, 64, 152);
     text-align: center;
     font-size: 40px;
+}
+
+button {
+    padding: 5px 5px;
+    border: none;
+    background-color: #92b0e7;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: "Michroma", sans-serif;
+}
+
+input {
+    padding: 3px 3px;
+    border: none;
+    background-color: #fbfbfc;
+    color: rgb(79, 132, 201);
+    font-size: 15px;
+    cursor: pointer;
+    font-family: "Michroma", sans-serif;
 }
