@@ -1,6 +1,6 @@
-async function fetchPokemon() {
+async function fetchPokemon(naam) {
     try {
-        const response = await fetch("https://pokeapi.co/api/v2/pokemon/82");
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${naam}`);
         const data = await response.json();
 
         console.log(data);
@@ -31,4 +31,11 @@ async function fetchPokemon() {
     }
 }
 
-fetchPokemon();
+let searchBtn = document.querySelector("#searchBtn");
+searchBtn.addEventListener("click", () => {
+    let searchInput = document.querySelector("#search").value.toLowerCase();
+    console.log(searchInput);
+    fetchPokemon(searchInput);
+});
+
+fetchPokemon(1);
